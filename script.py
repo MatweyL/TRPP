@@ -7,3 +7,10 @@ def main():
         
 if __name__ == "__main__":
     main()
+
+def print_file_data():
+    file = open(data.txt, r)
+    data = file.read().split(';')
+    for num in data:
+        print(num)
+    file.close()
